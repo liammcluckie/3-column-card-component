@@ -14,7 +14,7 @@ body {
   font-size: 0.9375rem;
   font-family: "Lexend Deca", sans-serif;
   line-height: 25px;
-  background-color: blue;
+  background-color: #f2f2f2;
 }
 
 h3 {
@@ -36,16 +36,28 @@ img {
   background-color: #e38826;
 }
 
+.bg--orange button {
+  color: #e38826;
+}
+
 .bg--cyan {
   background-color: #006970;
+}
+
+.bg--cyan button {
+  color: #006970;
 }
 
 .bg--dark {
   background-color: #004241;
 }
 
+.bg--dark button {
+  color: #004241;
+}
+
 .container {
-  width: 90%;
+  width: 70%;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,12 +78,36 @@ img {
 
 .card {
   padding: 2rem 2.5rem;
+  border-radius: 8px;
+  height: 25rem;
+}
+
+.card:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .card img,
 .card h3,
 .card p {
   margin-bottom: 1.5rem;
+}
+
+.card button {
+  background-color: #f2f2f2;
+  outline: none;
+  cursor: pointer;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.card button:hover, .card button:focus {
+  background-color: transparent;
+  color: #f2f2f2;
+  border: 2px solid #f2f2f2;
 }
 
 .attribution {

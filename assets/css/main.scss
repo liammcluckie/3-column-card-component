@@ -35,7 +35,7 @@ body {
     font-size: 0.9375rem;
     font-family: $ff--lexend;
     line-height: 25px;
-    background-color: blue;
+    background-color: $grey--light;
 }
 
 h3 {
@@ -55,19 +55,31 @@ img {
 
 .bg--orange {
     background-color: $orange;
+
+    button {
+        color: $orange;
+    }
 }
 
 .bg--cyan {
     background-color: $cyan;
+
+    button {
+        color: $cyan;
+    }
 }
 
 .bg--dark {
     background-color: $cyan--dark;
+
+    button {
+        color: $cyan--dark;
+    }
 }
 
 // Component
 .container {
-    width: 90%;
+    width: 70%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -79,11 +91,34 @@ img {
 
 .card {
     padding: 2rem 2.5rem;
+    border-radius: 8px;
+    height: 25rem;
+
+    &:hover {
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
 
     img,
     h3,
     p {
         margin-bottom: 1.5rem;
+    }
+
+    button {
+        background-color: $grey--light;
+        outline: none;
+        cursor: pointer;
+        border: 2px solid $grey--light;
+        border-radius: 25px;
+        padding: 0.75rem 1.5rem;
+        transition: 0.4s;
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            color: $grey--light;
+            border: 2px solid $grey--light;
+        }
     }
 }
 
