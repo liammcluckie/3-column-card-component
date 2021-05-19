@@ -18,6 +18,75 @@ $ff--BSD: "Big Shoulders Display", cursive;
     }
 }
 
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &::before,
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+// General styles
+body {
+    font-size: 0.9375rem;
+    font-family: $ff--lexend;
+    line-height: 25px;
+    background-color: blue;
+}
+
+h3 {
+    font-family: $ff--BSD;
+    color: $grey--light;
+    text-transform: uppercase;
+    font-size: 2.6rem;
+}
+
+p {
+    color: $paragraph;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg--orange {
+    background-color: $orange;
+}
+
+.bg--cyan {
+    background-color: $cyan;
+}
+
+.bg--dark {
+    background-color: $cyan--dark;
+}
+
+// Component
+.container {
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.card {
+    padding: 2rem 2.5rem;
+
+    img,
+    h3,
+    p {
+        margin-bottom: 1.5rem;
+    }
+}
+
 // Footer
 .attribution {
     font-size: 11px;

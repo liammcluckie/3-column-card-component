@@ -1,3 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 0.9375rem;
+  font-family: "Lexend Deca", sans-serif;
+  line-height: 25px;
+  background-color: blue;
+}
+
+h3 {
+  font-family: "Big Shoulders Display", cursive;
+  color: #f2f2f2;
+  text-transform: uppercase;
+  font-size: 2.6rem;
+}
+
+p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg--orange {
+  background-color: #e38826;
+}
+
+.bg--cyan {
+  background-color: #006970;
+}
+
+.bg--dark {
+  background-color: #004241;
+}
+
+.container {
+  width: 90%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.card {
+  padding: 2rem 2.5rem;
+}
+
+.card img,
+.card h3,
+.card p {
+  margin-bottom: 1.5rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
