@@ -76,21 +76,53 @@ img {
   padding-top: 2rem;
 }
 
+@media (min-width: 1440px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 .card {
+  width: 315px;
   padding: 2rem 2.5rem;
   border-radius: 8px;
   height: 25rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+@media (min-width: 1440px) {
+  .card {
+    height: 500px;
+  }
 }
 
 .card:hover {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-          box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+          box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card img,
 .card h3,
 .card p {
   margin-bottom: 1.5rem;
+}
+
+@media (min-width: 1440px) {
+  .card img,
+  .card h3,
+  .card p {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .card p {
+    margin-bottom: 6rem;
+  }
 }
 
 .card button {
@@ -108,6 +140,11 @@ img {
   background-color: transparent;
   color: #f2f2f2;
   border: 2px solid #f2f2f2;
+}
+
+footer {
+  padding-top: 5rem;
+  width: 100%;
 }
 
 .attribution {
