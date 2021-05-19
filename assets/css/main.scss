@@ -1,0 +1,29 @@
+// Variables
+
+// Colours
+$orange: hsl(31, 77%, 52%);
+$cyan: hsl(184, 100%, 22%);
+$cyan--dark: hsl(179, 100%, 13%);
+$paragraph: hsla(0, 0%, 100%, 0.75);
+$grey--light: hsl(0, 0%, 95%);
+
+// Fonts
+$ff--lexend: "Lexend Deca", sans-serif;
+$ff--BSD: "Big Shoulders Display", cursive;
+
+// Mixin
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;
+    }
+}
+
+// Footer
+.attribution {
+    font-size: 11px;
+    text-align: center;
+
+    a {
+        color: hsl(228, 45%, 44%);
+    }
+}
